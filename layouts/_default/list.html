@@ -1,0 +1,9 @@
+{{ define "list" }}
+<h2>{{ .Title }}</h2>
+<div class="container">
+    {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    {{ .Content }}
+</div>
+{{ end }}
